@@ -1,0 +1,143 @@
+@charset:"UTF-8";
+@font-face{
+  font-family:'idroid';
+  src: url("./pacote-projeto-d010/fontes/idroid.otf") format("opentype");
+}
+
+:root{
+  --cor1: rgb(197,245,215);
+  --cor2: rgb(0,114,5);
+  --cor3: #009800;
+  --cor4: rgb(8,85,35);
+  --cor5: #002900;
+  --asid: rgb(160,238,175);
+  --asdh3: rgb(0,202,145);
+  --ttb: rgb(0,119,60);
+  --ttp: rgb(112,245,173);
+  --asdtit: rgb(54,204,131);
+}
+body{
+  margin: 0px;
+  background-color: var(--cor1);
+}
+.tit{
+  font-family: "idroid", Sans-Serif;
+  background-image: linear-gradient(to right, rgb(200,245,224), #ffffff00);
+  color: var(--cor4);
+}
+#one{
+  background-image: linear-gradient(to top, var(--ttb), var(--ttp));
+  text-align: center;
+  color: white;
+  margin-top: -21px;
+  box-shadow: 3px 3px 3px #0000007a;
+}
+header#one > h1{
+  font-family: Helvetica,Sans-Serif;
+  font-weight: bold;
+  font-size: 2.2em;
+  text-shadow: 2px 2px 4px #0000007a;
+}
+header#one > nav {
+  text-align: left;
+}
+header#one > nav > a {
+  color: #000000e2;
+  margin-left: 6px;
+  text-decoration: none;
+  font-size: 1em;
+}
+header#one > nav > a:houver {
+  background-color: var(--cor1);
+  color: var(--cor5);
+  font-weight: bold;
+}
+header#one > nav > a:active{
+  background-color: var(--cor1);
+  color: var(--cor5);
+  font-weight: bold;
+}
+main#zero {
+  margin: 0px;
+  max-width: 800px;
+  background-color: white;
+  margin: auto;
+  padding: 10px;
+  border-radius: 0px 0px 4px 4px;
+  margin-bottom: 10px;
+  text-align: justify;
+  box-shadow: 3px 3px 10px #00000062;
+}
+main#zero > h1 {
+  font-size:1.7em;
+  margin: 0px;
+  text-align: left;
+}
+main#zero > p {
+  font-family: Helvetica, Arial, Sans-Serif;
+}
+main#zero > p > strong {
+  color: var(--cor4);
+}
+.alinhar{
+  text-align: center;
+}
+#video{
+  background-color: var(--cor4);
+  text-align: center;
+  position: relative;
+  padding: 25%;
+  margin-bottom: 3%;
+}
+#video > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+main#zero > aside {
+  background-color: var(--asid);
+  padding: 3px;
+  border-radius: 5px;
+  text-align: justify;
+  box-shadow: 3px 3px 4px rgba(0,0,0,0.45);
+}
+main#zero > aside > h3 {
+  background-color: var(--asdtit);
+  padding: 5px;
+  height: 40px;
+  margin-top: -4px;
+  margin-right:-3px;
+  margin-left: -3px;
+  border-radius: 5px 5px 0px 0px;
+}
+main#zero > aside > p > a, main#zero > p > a {
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+  list-style-type: "\2714\00A0";
+}
+main#zero > aside > p > a > strong,main#zero > p > a > strong {
+  color: var(--cor4);
+}
+main#zero > p > a > strong::after, main#zero > aside > p > a > strong::after{
+  content: "\00A0\1F517";
+}
+footer#three {
+  background-color: var(--cor2);
+  color: white;
+  font-size: 15px;
+  padding: 6px;
+  text-align: center;
+}
+footer#three > p > a {
+  text-decoration: none;
+  color: white;
+}
+@media (min-width: 450px) {
+  ul {
+    columns: 2;
+  }
+}
